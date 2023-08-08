@@ -10,9 +10,9 @@ function escribir(materias){
 		console.log(promedio) 
 
 		const materiasHTML = `<div class="Cuadradito">
-			<span onclick="eliminar(${index})" class="EliminarMateria"> x </span>
+			<span onclick="eliminar(${materia.codigo})" class="EliminarMateria"> x </span>
 			<span>${materia.nombre}</span>
-			<span>${materia.docente}, ${materia.horas}</span>
+			<span>${materia.docente}, ${materia.hsCatedras}</span>
 			<span>cod: ${materia.codigo} - ${materia.notas}</span>
 			<span>prom: ${promedio} </span>
 			</div>`
@@ -44,11 +44,21 @@ function eliminarTodos(){
 	limpiar();
 }
 
+function guardarMaterias(materia){
+	const apiUrl = 'http://192.168.0.196:3010/api/materias';
+	axios.post(apiUrl, materia )
+	.then((response) => {
+		console.log('Materia guardada con exito:', response.data);
+	})
+	.catch((error) => {
+		console.log('Error al guardar la materia', error);
+	});
+}
 
 function alerta(){
 	const nombre = document.getElementById('materia').value;
 	const docente = document.getElementById('docente').value;
-	const horas = document.getElementById('horas').value;
+	const hsCatedras = document.getElementById('horas').value;
 	const codigo = document.getElementById('codigo').value;
 	const notasHTML = [...document.getElementsByName('nota')];
 	
@@ -57,18 +67,13 @@ function alerta(){
 	const materia = {
 		nombre,
 		docente,
-		horas,
+		hsCatedras,
 		codigo,
 		notas
 		
 		
 	}
-console.log(materia)
-
-	materias.push(materia)
-
- 	escribir(materias);
-
+	guardarMaterias(materia)
 
 }
 
