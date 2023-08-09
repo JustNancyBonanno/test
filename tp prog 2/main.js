@@ -49,7 +49,17 @@ function ordenarTodos(){
 	escribir(materias);
 }
 	
-	
+
+	document.getElementById("login").addEventListener("click", funtion() {
+		var dato1 = ocument.getElementById("input1").value;
+		var dato2 = document.getElementById("input2").value;
+
+		console.log("user:", dato1);
+		console.log("pasword:", dato2);
+
+	});
+	 
+
 
 
 
