@@ -11,11 +11,14 @@
 	justify-content: center;
 	background-color: rgba(0, 0, 0, 0.3);
 	border-bottom: 1px solid #d6d6e7;
+	height: 57px;
+
 
 }
 
 body{
 	background-image: url(./assets/ushi.jpg);
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -27,11 +30,19 @@ body{
 
 }
 
+.head h1 {
+	margin-top: 15px;
+}
+
 h2, h1{
 	color: #D5D8DC;
 	font-family: 'Lora', serif;
 	font-size: 21px;
 	
+}
+
+.contenedorF h2 {
+	margin-bottom: 15px;
 }
 
 .contenedorF{
@@ -86,6 +97,7 @@ label{
 	 justify-content: center;
 	flex-wrap: wrap;
 	align-content: flex-start;
+	backdrop-filter: blur(1px);
 
 
 }
@@ -103,6 +115,7 @@ margin-top: 54px;
 	margin-bottom: 20px;
 	border: 1px solid #d6d6e7;
 	border-radius: 50px;
+	backdrop-filter: blur(1px);
 
 }
 
@@ -156,9 +169,20 @@ margin-top: 54px;
 
 }
 
+.recuadrito{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid #d6d6e7;
+	padding: 20px;
+	border-radius: 30px;
+	margin-bottom: 80px;
+	backdrop-filter: blur(1px);
+}
+
 #FIM{
-	margin-top: 0,5px;
-	margin-bottom: 30px;
+	margin-top: 55px;
+	margin-bottom: 55px;
 }
 .formulario{
 	display: flex;
@@ -172,12 +196,13 @@ margin-top: 54px;
 	margin-top: 20px ;
 	margin-bottom: 20px;
 	width: 500px;
+	backdrop-filter: blur(1px);
 }
 
 .footer{
 	background-color: rgba(0, 0, 0, 0.3);
 	border-top: 1px solid #d6d6e7;
-	height: 55px;
+	height: 66px;
 }
 
 
