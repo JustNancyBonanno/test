@@ -9,21 +9,22 @@
 </head>
 <body>
 	<div class="contenedor">
-		<form action="">
+		<form action="" onsubmit="mostrarDatos(); return false;">
 			<h1>Login</h1>
 			<div class="formulario">
-				<input type="text" placeholder="Username" required>
+				<input type="text" id="input1" placeholder="Username" required>
 				<i class='bx bxs-user'></i>
 			</div>
 			<div class="formulario">
-				<input type="password" placeholder="Password" required>
+				<input type="password" id="input2" placeholder="Password" required>
 				<i class='bx bxs-lock-alt' ></i>
 			</div>
 
-			<button type="submit" class="btn">Log in</button>	
+			<button type="submit" class="btn" id="logear">Log in</button>	
 			<button type="submit" class="btn">Create</button>
 
 			</div>
 		</form>
 	</div>
 </body>
+</html>
