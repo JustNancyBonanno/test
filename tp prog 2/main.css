@@ -1,199 +1,91 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap");
+
+* {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+	font-family:"Poppins", sans-serif;
+
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap');
-
-
-.head{
+body {
 	display: flex;
 	justify-content: center;
-	background-color: rgba(0, 0, 0, 0.3);
-	border-bottom: 1px solid #d6d6e7;
-
-}
-
-body{
-	background-image: url(./assets/ushi.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.body{
-	display: flex;
-	justify-content: center;
-	justify-content: row;
-	min-height: calc(100vh - 120px);
-	padding: 10px 120px;
-
-}
-
-h2, h1{
-	color: #D5D8DC;
-	font-family: 'Lora', serif;
-	
-}
-
-.contenedorF{
-	display: flex;
-	justify-content: center;
-	
-
-}
-
-.ingresar{
-	cursor: pointer;
-	background-color: rgba(0, 0, 0, 0.5);
-	border: 1px solid #d6d6e7;
-	border-radius: 5px;
-	height: 30px;
-	width: 80px ;
-	color: #D5D8DC;
-	margin-right: 10px;
-
-}
-
-label{
-	color: #D5D8DC;
-}
-.botoncitos{
-	display: flex;
-	flex-direction: row;
-	margin-top: 20px;
-}
-.num{
-	width: 80px;
-	background-color: rgba(0, 0, 0, 0.3); 
-	position: relative;
-	cursor: text;
-	font-size: 14px;
-	line-height: 20px;
-	padding: 0 16px;
-	height: 50px;
-	border: 1px solid #d6d6e7;
-	border-radius: 3px;
-	color: #D5D8DC;
-	margin-right: 30px;
-	margin-left: 30px;
-}
-
-.botonsitoos{
-	display: flex;
-	flex-direction: row;
-	margin-top: 50px;
-}
-
-.inicio{
-	background-color: rgba(0, 0, 0, 0.3);
-	border-radius: 5px;
-	height: 30px;
-	margin-bottom: 10px;
-
-}
-.contenedorM{
-	 display: flex;
-	 flex: 1;
-	 flex-direction: row;
-	 align-items: flex-start;
-	 justify-content: center;
-	flex-wrap: wrap;
-	align-content: flex-start;
-
-
-}
-
-.limpiadito{
-	display: flex;
-	flex-direction: column;
-	background-color: rgba(0, 0, 0, 0.3);
-	flex: 2;
 	align-items: center;
-	margin-top: 20px ;
-	margin-bottom: 20px;
-	border: 1px solid #d6d6e7;
-	border-radius: 50px;
+	min-height: 100vh;
+	background-image: url('https://s2.best-wallpaper.net/wallpaper/1920x1080/1904/GTA-5-city-at-night-purple-style-skyscrapers_1920x1080.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
 
 }
 
-.letritas{
-	background-color: rgba(0, 0, 0, 0.3); 
+.contenedor{
+	width: 420px;
+	background: transparent;
+	border: 2px solid rgb(255, 255, 255, .2);
+	backdrop-filter: blur(5px);
+	box-shadow: 0 0 10px rgb(0, 0, 0, .2);
+	color: #fff;
+	border-radius: 10px;
+	padding: 30px 40px ;
+
+}
+
+.contenedor h1 {
+	font-size: 36px;
+	text-align: center;
+
+}
+
+.contenedor .formulario {
 	position: relative;
-	cursor: text;
-	font-size: 14px;
-	line-height: 20px;
-	padding: 0 16px;
-	height: 30px;
-	border: 1px solid #d6d6e7;
-	border-radius: 3px;
-	color: #D5D8DC;
-
+	width: 100%;
+	height: 50px;
+	margin: 30px 0;
 }
 
-.limpiar{
-	height: 30px;
-	width: 80px ;
+.formulario input {
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	border: 2px solid rgb(255, 255, 255, .2);
+	border-radius: 40px;
+	font-size: 16px;
+	color: #fff;
+	padding: 20px 45px 20px 20px;
+	
+}
+
+.formulario input::placeholder {
+	color: #fff;
+}
+
+.formulario i {
+	position: absolute;
+	right: 27px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 20px;
+}
+
+.contenedor .btn {
+	width: 100%;
+	height: 45px;
+	background: #fff;
+	border: none;
+	outline: none;
+	border-radius: 40px;
+	box-shadow: 0 0 10px rgb(0, 0, 0, .1);
 	cursor: pointer;
-	margin-bottom: 20px;
-	background-color: rgba(0, 0, 0, 0.5);
-	border: 1px solid #d6d6e7;
-	color: #D5D8DC;
-	border-radius: 5px;
+	font-size: 16px;
+	color: #333;
+	font-weight: 600;
+	margin-bottom: 10px;
 }
 
-#ordenar{
-	height: 30px;
-	width: 80px ;
-	cursor: pointer;
-	margin-bottom: 20px;
-	background-color: rgba(0, 0, 0, 0.5);
-	border: 1px solid #d6d6e7;
-	color: #D5D8DC;
-	border-radius: 5px;
-}
-
-.Cuadradito{
-	position: relative;
-	background-color: white;
-	border-radius: 8px;
-	padding: 10px 5px;
-	margin: 9px;
-	padding-right: 40px;
-
-}
-
-.Materia span{
-    margin: 10px 15px;
-}
-
-.EliminarMateria{
-    position: absolute;
-    right: 6px;
-    top: 2px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    padding: 8px 12px;
-    cursor: pointer;
-
-}
-
-.formulario{
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	background-color: rgba(0, 0, 0, 0.3);
-	align-items: center ;
-	border-radius: 50px;
-	border: 1px solid #d6d6e7;
-	margin-top: 220px ;
-	margin-bottom: 20px;
-	width: 500px;
-	height: 350px;
-}
-
-.footer{
-	background-color: rgba(0, 0, 0, 0.3);
-	border-top: 1px solid #d6d6e7;
-	height: 55px;
-}
 
 
