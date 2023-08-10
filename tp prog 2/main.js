@@ -49,7 +49,7 @@ function guardarMaterias(materia){
 	axios.post(apiUrl, materia )
 	.then((response) => {
 		console.log('Materia guardada con exito:', response.data);
-		//llamar a obtener materias obtenerMaterias()
+	    //obtenerMaterias();llamar a obtener materias obtenerMaterias()
 	})
 	.catch((error) => {
 		console.log('Error al guardar la materia', error);
@@ -60,7 +60,7 @@ function obtenerMaterias(){
 	axios.get('http://192.168.0.196:3010/api/materias')
 	.then((response) => {
 		console.log( response.data);
-		//llamar a ecribir materias
+		//escribir(materias);llamar a ecribir materias
 	})
 	.catch((error) => {
 		console.log('Error al traer datos de la materia', error);
