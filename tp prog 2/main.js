@@ -5,8 +5,8 @@ function escribir(materias){
 	materias.forEach((materia, index) =>{
 
 	
-		const promedio = materia.notas.reduce((acu, calif ) => acu + calif, 0) /materia.notas.length;
-
+		//const promedio = materia.notas.reduce((acu, calif ) => acu + calif, 0) /materia.notas.length;
+		const promedio = 0
 		console.log(promedio) 
 
 		const materiasHTML = `<div class="Cuadradito">
@@ -49,7 +49,7 @@ function guardarMaterias(materia){
 	axios.post(apiUrl, materia )
 	.then((response) => {
 		console.log('Materia guardada con exito:', response.data);
-	    //obtenerMaterias();//llamar a obtener materias obtenerMaterias()
+	    obtenerMaterias();//llamar a obtener materias obtenerMaterias()
 	})
 	.catch((error) => {
 		console.log('Error al guardar la materia', error);
@@ -60,12 +60,16 @@ function obtenerMaterias(){
 	axios.get('http://192.168.0.196:3010/api/materias')
 	.then((response) => {
 		console.log( response.data);
-		//const materiasObtenidas = response.data;
-		//escribir(materiasObtenidas);//llamar a ecribir materias
+		const materiasObtenidas = response.data.materias;
+		escribir(materiasObtenidas);//llamar a ecribir materias
 	})
 	.catch((error) => {
 		console.log('Error al traer datos de la materia', error);
 	}); 
+}
+
+function mostrar(){
+	obtenerMaterias();
 }
 
 function alerta(){
