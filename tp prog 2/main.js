@@ -1,5 +1,3 @@
-
-//document.getElementById("logear").addEventListener("click", function() {
 function mostrarDatos() {
 	var dato1 = document.getElementById("input1").value;
 	var dato2 = document.getElementById("input2").value;
@@ -9,8 +7,9 @@ function mostrarDatos() {
 
 }
 
-function redireccionar(){
+function redireccionar() {
+	window.location.href = 'create/cuenta.html';
+  }
+  
 
-	window.location.href ='file:///C:/Users/bonannon/Documents/GitHub/test/tp%20prog%202/crear%20cuanta/cuenta.html';
 
-}

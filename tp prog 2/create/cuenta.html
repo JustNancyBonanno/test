@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./main.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<title>T.P Programacion</title>
+	<script src="./main.js"></script>
+</head>
+<body>
+	<div class="contenedor">
+		<form action="" onsubmit="mostrarDatos(); return false;">
+			<h1>Create Usurname</h1>
+			<div class="formulario">
+				<input type="text" id="inputa" placeholder="Surname" required>
+			</div>
+			<div class="formulario">
+				<input type="text" id="inputb" placeholder="Name" required>
+			</div>
+			<div class="formulario">
+				<input type="text" id="inputc" placeholder="DNI" pattern="[0-9]{8}" required>
+			</div>
+			<div class="formulario">
+				<input type="emaiL" id="inputd" placeholder="Email" required>
+			</div>
+			<div class="formulario">
+				<input type="text" id="inpute" placeholder="Direction" required>
+			</div>
+			<div class="formulario">
+				<input type="password" id="password" placeholder="Password" required>
+			</div>
+			<div class="formulario">
+				<input type="password" id="repeatpassword" placeholder=" Repeat Password" required>
+			</div>
+			<button type="button" class="btn" onclick ="validarContraseña()" id="crear" required>Create</button>
+			<button type="button" class="btn"  onclick="goBack()" id="volver" required >Come Back</button>
+		</form>
+	</div>
+</body>
+</html>
