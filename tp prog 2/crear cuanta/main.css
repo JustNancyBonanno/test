@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:"Poppins", sans-serif;
+
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-image: url('https://s2.best-wallpaper.net/wallpaper/1920x1080/1904/GTA-5-city-at-night-purple-style-skyscrapers_1920x1080.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+
+}
+
+.contenedor{
+	width: 420px;
+	background: transparent;
+	border: 2px solid rgb(255, 255, 255, .2);
+	backdrop-filter: blur(5px);
+	box-shadow: 0 0 10px rgb(0, 0, 0, .2);
+	color: #fff;
+	border-radius: 10px;
+	padding: 30px 40px ;
+
+}
+
+.contenedor h1 {
+	font-size: 36px;
+	text-align: center;
+
+}
+
+.contenedor .formulario {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	margin: 30px 0;
+}
+
+.formulario input {
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	border: 2px solid rgb(255, 255, 255, .2);
+	border-radius: 40px;
+	font-size: 16px;
+	color: #fff;
+	padding: 20px 45px 20px 20px;
+	
+}
+
+.formulario input::placeholder {
+	color: #fff;
+}
+
+.formulario i {
+	position: absolute;
+	right: 27px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 20px;
+}
+
+.contenedor .btn {
+	width: 100%;
+	height: 45px;
+	background: #fff;
+	border: none;
+	outline: none;
+	border-radius: 40px;
+	box-shadow: 0 0 10px rgb(0, 0, 0, .1);
+	cursor: pointer;
+	font-size: 16px;
+	color: #333;
+	font-weight: 600;
+	margin-bottom: 10px;
+}

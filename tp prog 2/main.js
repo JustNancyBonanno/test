@@ -8,3 +8,9 @@ function mostrarDatos() {
 	console.log("Password:", dato2);
 
 }
+
+function redireccionar(){
+
+	window.location.href ='file:///C:/Users/bonannon/Documents/GitHub/test/tp%20prog%202/crear%20cuanta/cuenta.html';
+
+}
